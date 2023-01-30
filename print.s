@@ -1,19 +1,16 @@
-@ File:    arya1.s
 @ Author:  Megh Arya
-@ Email: ma0097@uah.edu
-@ Term: CS309-01 2022 
-@ Purpose: Print statements for CS-309 HW-1 
-@
+@ Purpose: Print statements using ARM Assembly 
+
+
 @ Use these commands to assemble, link, run and debug the program
 @
-@  as -o arya1.o arya1.s
-@  gcc -o arya1 arya1.o
-@ ./arya1 ;echo $?
-@ gdb --args ./arya1
-@
+@  as -o print.o print.s
+@  gcc -o print print.o
+@ ./print ;echo $?
+@ gdb --args ./print
 
 .global main 
-main:        @Must use this label where to start executing the code. 
+main:        @ Must use this label where to start executing the code. 
 
 @ Part 1 - Print name using the system call.
 @
