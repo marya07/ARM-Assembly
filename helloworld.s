@@ -1,21 +1,16 @@
-@ File:    helloworld.s
 @ Author:  Megh Arya
-@ Purpose: Provide enough assembly to allow students to complete an assignment. 
-@ History: 
-@    04-Mar-2019 Added comments to help with printf and svc calls.
-@    15-Sep-2019 Added comments on which registers are changed
-@           when there is a call to printf or SVC.
-@
+@ Purpose: Printing "Hello, World!" using ARM basic assembly instructions.
+
 @ Use these commands to assemble, link, run and debug the program
 @
 @  as -o helloworld.o helloworld.s
 @  gcc -o helloworld helloworld.o
 @ ./helloworld ;echo $?
 @ gdb --args ./helloworld
-@
+
 @ If you get an error from the as (assembler) command AND it does not call out a line
 @ number, check to make sure the current default directory contains the file.
-@
+
 @ If your codes executes with no errors but your string is not printing then
 @ you have forgotten the end your string with \n. 
 @
@@ -81,8 +76,3 @@ string2: .asciz "Hello World.\n" @Length 0x0E
 @ When the call returns registers: r0, r1, r2, r3 and r12 are changed. 
 
 @end of code and end of file. Leave a blank line after this. 
-
-
-
-@ push {r0-r3, r12}
-@pop push {r0-r3, r12}
