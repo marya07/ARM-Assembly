@@ -1,14 +1,11 @@
-@ Filename: Arya-Lab5.s
 @ Author:   Megh Arya
-@ Email:    ma0097@uah.edu
-@ Term:     CS309-01 2022
 @ Purpose:  Simulating one day function of a teller machine.
 
 @ Use these commands to assemble, link, run and debug this program:
-@    as -o Arya-Lab5.o Arya-Lab5.s
-@    gcc -o Arya-Lab5 Arya-Lab5.o
-@    ./Arya-Lab5 ;echo $?
-@    gdb --args ./Arya-Lab5 
+@    as -o ARM-Teller-Machine.o ARM-Teller-Machine.s
+@    gcc -o ARM-Teller-Machine ARM-Teller-Machine.o
+@    ./ARM-Teller-Machine ;echo $?
+@    gdb --args ./ARM-Teller-Machine 
 
 .equ READERROR, 0 @Used to check for scanf read error. 
 
