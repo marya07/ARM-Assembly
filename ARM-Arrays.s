@@ -1,13 +1,14 @@
-@ File: Arya-Lab-1.s
-@ Megh Arya
-@ ma0097@uah.edu
-@ CS413-01 Spring 2023
-@
+@ Author: Megh Arya
+@ Purpose: Working with Arrays in ARM assembly, adding arrays to generate summary array using for loop, and prinitng elements of type negative, 
+@ 	   	positive or zero from summary array upon user input.
+
+
 @ Use these commands to assemble, link, run and debug the program
-@  as -o Arya-Lab-1.o Arya-Lab-1.s
-@  gcc -o Arya-Lab-1 Arya-Lab-1.o
-@  ./Arya-Lab-1 ;echo $?
-@  gdb --args ./Arya-Lab-1
+@  as -o ARM-Arrays.o ARM-Arrays.s
+@  gcc -o ARM-Arrays ARM-Arrays.o
+@  ./ARM-Arrays ;echo $?
+@  gdb --args ./ARM-Arrays
+
 
 .equ READERROR, 0 @ Used to check for scanf read error 
 
